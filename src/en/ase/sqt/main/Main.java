@@ -33,10 +33,13 @@ public class Main {
         IGSMConnection urgent = GSMConnectionByType.getInstance(ConnectionType.URGENT);
         IGSMConnection urgent2 = GSMConnectionByType.getInstance(ConnectionType.URGENT);
         IGSMConnection priority = GSMConnectionByType.getInstance(ConnectionType.PRIORITY);
+        IGSMConnection regular = GSMConnectionByType.getInstance(ConnectionType.REGULAR);
+
 
         urgent.call();
         urgent2.call();
         priority.call();
+        regular.call();
 
         System.out.println("urgent == urgent2: " + (urgent == urgent2));
         System.out.println("urgent == priority: " + (urgent == priority));

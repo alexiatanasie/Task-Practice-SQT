@@ -1,6 +1,6 @@
 package en.ase.sqt.factory;
 
 public enum PhoneType {
-    BASIC,
-    ADVANCED
+    BASIC
+//we can define more types of phones for our factory
 }
